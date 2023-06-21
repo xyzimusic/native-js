@@ -1,14 +1,24 @@
 import {multiply, splitIntoWords, sum} from "./01";
 
-test('sum should be correct', ()=>{
+let a: number;
+let b: number;
+let c: number;
+
+beforeEach(()=>{
+   a = 1;
+   b = 2;
+   c = 3;
+})
+
+test('sum should be correct', () => {
     //data
-    const a = 1;
-    const b = 2;
-    const c = 3;
+    // const a = 1;
+    // const b = 2;
+    // const c = 3;
 
     //action
-    const result1 = sum(a,b)
-    const result2 = sum(a,c)
+    const result1 = sum(a, b)
+    const result2 = sum(a, c)
 
     //expect result
     expect(result1).toBe(3);
@@ -16,22 +26,22 @@ test('sum should be correct', ()=>{
 })
 
 
-test('sum should be multiply', ()=>{
+test('sum should be multiply', () => {
     //data
-    const a =1;
-    const b =2;
-    const c =3;
+    // const a = 1;
+    // const b = 2;
+    // const c = 3;
 
     //action
-    const result1 = multiply(a,b)
-    const result2 = multiply(a,c)
+    const result1 = multiply(a, b)
+    const result2 = multiply(a, c)
 
     //expect result
     expect(result1).toBe(2);
     expect(result2).toBe(3);
 })
 
-test('splitting into words should be correct', ()=>{
+test('splitting into words should be correct', () => {
     //data
     const sent1 = 'hello my friend'
     const sent2 = 'JS - the best  programming language.'
