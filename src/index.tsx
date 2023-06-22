@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {splitIntoWords} from './01-hello-tests/01'
 
-const sentense = 'JS - the best  programming language.'
-const result = splitIntoWords(sentense)
-console.log(result)
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
